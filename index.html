@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin</title>
+	<!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<!-- Internal stylesheet -->
+    <link rel="stylesheet" href="css/style.css"></link>
+</head>
+<body>
+
+<section class="main">
+<div class="row">
+<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+<div class="admin-panel">
+
+<!-- tab section -->
+<div class="section-tabs">
+  		<ul class="nav nav-tabs">
+    		<li class="active"><a data-toggle="tab" href="#details">Details</a></li>
+    		<li><a data-toggle="tab" href="#agenda">Agenda</a></li>
+  		</ul>
+<div class="tab-content">
+<div id="details" class="tab-pane fade in active">	
+	<table class="table table-hover">	
+		<tbody>
+			<tr class="active">
+				<th scope="row" class="first-cell">1</th>
+				<th>test</th>				
+			</tr>
+			<tr class="active">
+				<th scope="row" class="first-cell">2</th>
+				<th>test</th>
+			</tr>
+			<tr class="active">
+				<th scope="row" class="first-cell">3</th>
+				<th>test</th>	
+			</tr>
+			<tr class="active">
+				<th scope="row" class="first-cell">4</th>
+				<th>test</th>
+			</tr>
+			<tr class="active">
+				<th scope="row" class="first-cell">5</th>
+				<th>test</th>	
+			</tr>
+			<tr class="active">
+				<th scope="row" class="first-cell">6</th>
+				<th>test</th>
+			</tr>
+			<tr class="active">
+				<td scope="row" class="first-cell">7</td>
+				<td>test</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div id="agenda" class="tab-pane fade in">
+	<table class="table table-hover">	
+		<tbody>
+			<tr class="active">
+				<th scope="row" class="first-cell" id="files-1">1</th>
+				<th id="files-admin">Admin</th>				
+			</tr>
+			<tr class="active">
+				<th scope="row" class="first-cell" id="files-2">2</th>
+				<th id="files-minutes">Minutes Last Meeting</th>
+			</tr>
+			<tr class="active">
+				<th scope="row" class="first-cell" id="files-3">3</th>
+				<th id="files-performance">Performance / Key Initiatives</th>	
+			</tr>
+			<tr class="active">
+				<th scope="row" class="first-cell" id="files-4">4</th>
+				<th id="files-management">Management Update</th>
+			</tr>
+			<tr data-toggle="collapse" data-target="#accordion" class="active">
+				<th scope="row" class="first-cell" id="files-5">5</th>
+				<th id="files-country">Country Managers Outlook</th>	
+			</tr>
+	 			<tbody id="accordion" class="collapse">
+					<tr class="active">
+						<td scope="row" class="first-cell" id="files-5.1">5.1</td> 
+						<td id="files-sia">Switzerland / Austria / Italy</td>
+					</tr>		  				
+					<tr class="active">
+						<td scope="row" class="first-cell" id="files-5.2">5.2</td>
+						<td id="files-germany">Germany</td>
+					</tr>		 			
+					<tr class="active">
+						<td scope="row" class="first-cell" id="files-5.3">5.3</td> 
+						<td id="files-france">France</td>
+					</tr>
+				</tbody>  	
+			<tr class="active">
+				<th scope="row" class="first-cell" id="files-6">6</th>
+				<th id="files-sales">Sales Marketing</th>
+			</tr>
+			<tr class="active">
+				<td scope="row" class="first-cell">7</td>
+				<td>Enter a new agenda item...</td>
+			</tr>
+		</tbody>
+	</table>	
+</div>
+
+<!-- section grey -->
+<section class="grey-box">
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<div class="grey-panel">
+</div>
+</div>
+</div>
+</section>
+<!-- end section grey -->
+
+<!-- table footer -->
+<footer class="table-footer">
+<div class="nav-bottom">
+<div class="nav-bottom-row">
+	<div class="nav-bottom-button">
+		<button type="button" class="btn btn-primary">Publish</button>
+	</div>
+	<div class="nav-bottom-icons">
+		<span class="grey"> | </span>
+		<button type="button" id=""><i class="fa fa-file-text-o" aria-hidden="true"></i></button>
+		<button type="button" id=""><i class="fa fa-file-text-o" aria-hidden="true"></i></button>
+		<span class="grey"> | </span>
+		<button type="button" id=""><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+		<button type="button" id=""><i class="fa fa-address-card-o" aria-hidden="true"></i></button>
+		<button type="button" data-toggle="modal" data-target="#myModal"><i class="fa fa-file-text-o" aria-hidden="true"></i></button>
+  <!-- Modal -->
+  		<div class="modal fade" id="myModal" role="dialog">
+    		<div class="modal-dialog modal-sm">
+      			<div class="modal-content">
+        			<div class="modal-header">
+	          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+	          			<h6 class="modal-title">Add documents to agenda items</h6>
+        			</div>
+       				<div class="modal-body-first-section">
+        				<div class="fileupload" id="fileupload">
+							<h6><span class="bigger">+ </span>Drop new document here</h6>
+          				</div>
+						<div class="button-browse">
+							<label for="or" class="text-or">or</label>
+							<input type="file" name="file" id="file" class="inputfile"/>
+							<label for="file" class="browse-comp">Browse your computer</label>
+        				</div>
+        			</div>	
+					<div class="modal-body-second-section" id="uploaded_file">
+        					<h6 class="modal-documents">Avalable documents (0)</h6>
+       				</div> 
+       				<div class="modal-search">
+							<i class="fa fa-search"></i>
+							<input id="filter" class="filter" type="text" placeholder="Search document......"/>
+							<input type="button" name="button" id="filtersubmit" class="inputfile"/>
+							<label for="button" class="select-all">Select all</label>
+							<i class="fa fa-trash" aria-hidden="true"></i>
+        			</div>
+					<div class="modal-body-third-section" id="white-block">		
+						<div id="files">
+						</div>
+						<div class="error-display">
+							<h6 id="error"></h6>
+						</div>						
+       				</div> 
+			        <div class="modal-footer">		 
+						<div class="row">
+							 <h5 class="background"><span>
+							  	<div class="col-md-4 col-sm-4 col-xs-4">
+							        <h6>Agenda item</h6> 
+							    </div>  
+							    <div class="col-md-4 col-sm-4 col-xs-4">
+							    	<div class="dropdown"> 
+										<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> ------  <span class="caret"></button> 
+											<ul class="dropdown-menu">
+							      				<li><a href="#">test</a></li>
+							      				<li><a href="#">test</a></li>
+							     				<li><a href="#">test</a></li>
+							    			</ul>		
+							    	</div>		
+							    </div>		
+							    <div class="col-md-4 col-sm-4 col-xs-4">
+							        <button type="button" class="btn btn-primary" id="blue" data-dismiss="modal">Add</button> 
+							    </div>	 
+							 </span></h5>     
+						</div>
+			        </div>
+      			</div>
+    		</div>
+		</div>  <!--end of Modal -->		
+	</div>
+</div>	
+</div>
+</footer>  <!--end table footer -->
+</div>	<!--end tab content -->
+</div>  <!--end tab section -->
+
+</div>
+</div>	
+</div>
+</section>
+
+	<!-- jquery js 
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+  	<!-- jquery js -->
+  	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+ 	 integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+ 	 crossorigin="anonymous"></script>
+ 	<!-- File Upload js -->
+	<script type="text/javascript" src="js/vendor/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="js/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="js/jquery.fileupload.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- script js -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

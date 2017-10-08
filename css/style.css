@@ -1,0 +1,233 @@
+* {
+	margin: 0;
+	padding: 0;
+}	
+textarea, input, button {
+    outline: none; 
+}
+.admin-panel:after {
+    position: absolute;
+	top: 15px;
+    left:20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "gsmm kw 6";
+}
+.admin-panel {
+    position: relative;
+    padding: 60px 0 0 0;
+    margin: 0;
+    border-color: #e5e5e5 #eee #eee;
+    border: solid #ddd;
+    border-width: 2px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px 8px 8px 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.table {
+    margin-bottom: 0;
+}
+.table-hover>tbody>tr.active:hover>th, .table-hover>tbody>tr.active:hover>td {
+    background-color: white;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #7DBBFF;
+}
+a {
+    color: #DDD;
+    text-decoration: none;
+}
+.nav-tabs>li>a:hover {
+    border-color: transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+}
+.nav>li>a {
+    padding: 10px 30px 10px 30px;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-bottom-row {
+    border-top: 1px solid #ddd;
+}
+.grey-box {
+    width: 100%;
+    height: 100px;
+    background-color: #f5f5f5;
+}
+.btn-primary {
+    background-color: #268EFF;
+    border-color: #268EFF;
+}
+.btn {
+    padding: 2px 15px;
+    margin: 10px;
+    font-size: 11px;
+}    
+.nav-bottom-button, .nav-bottom-icons {
+	display: inline-block;
+}
+.nav-bottom-icons {
+	float: right;
+}
+i.fa {
+    color: #7DBBFF;
+	padding: 11px;
+}
+.grey {
+    color: #C1C1C1;
+}
+button {
+    background-color: transparent;
+    border: 0;
+}
+.fa.fa-file-text-o {
+    position: relative;
+    display: inline-block;
+}
+.modal-dialog {
+    position: absolute;
+    bottom: auto;
+    right: 8%;
+    left: auto;
+    top: auto;
+}
+@media (min-width: 768px)
+vendor-prefixes.less:69
+.modal-dialog {
+    width: 600px;
+    margin: 3% auto auto auto; */
+}  
+.modal.fade:not(.in) .modal-dialog {
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+}
+.modal-content {
+    border-bottom: none;
+}
+.modal-dialog:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f5f5f5 transparent transparent transparent;
+}
+.modal-body-first-section, .modal-body-second-section {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-body-second-section {
+    padding-bottom: 3px;
+}
+.modal-title, .modal-documents, .modal-drop {
+    font-weight: bold;
+}
+.fileupload {
+    text-align: center;
+    color: #7DBBFF;
+    border: 2px dashed #7DBBFF;
+}
+.fileupload-over {
+    color: #268EFF;
+    border: 2px dashed #268EFF;
+}
+.text-or {
+    font-size: 11px;
+    font-weight: normal;
+    color: black;
+}
+.bigger {
+    font-size: 150%; 
+}
+.browse-comp, .select-all {
+    font-size: 11px;
+    font-weight: normal;
+    color: #7DBBFF;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    cursor: pointer; 
+}
+.button-browse {
+    text-align: right;
+}
+.modal-body-second-section {
+    color: grey;
+}
+i.fa.fa-search, i.fa.fa-trash {
+    color: grey;
+}
+i.fa.fa-trash {
+    margin-left: 6px;
+}
+.filter {
+    height: 20px;
+    border: 1px solid transparent;
+    border-right: 1px solid #ddd;
+    margin-right: 10px;
+}
+.modal-body-third-section {
+    height: 130px;
+    border: 1px solid transparent;
+    border-top: 1px solid #ddd;
+}
+.modal-footer {
+    padding: 2px;
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+h6 {
+    margin-top: 12px;
+}
+h5.background {
+  position: relative;
+  z-index: 1;
+}
+h5:before {
+  border-top: 1px solid #dfdfdf;
+  content:"";
+  margin: 20px 0 auto 102px;
+  width: 40%;
+  position: absolute; 
+  top: -50%; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+}
+.btn.btn-primary#blue {
+    background-color: #7DBBFF;
+    border-color: #7DBBFF;
+}
+
+.table>tbody+tbody {
+    border: none;
+}
+th.first-cell, td.first-cell {
+    width: 4%;
+}
+#error {
+    text-align: center;
+    color: red;
+}
+
+
